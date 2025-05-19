@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inbox App</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    #messages { margin-top: 20px; }
+    .msg { margin: 5px 0; padding: 5px; background: #f1f1f1; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Inbox</h2>
+  <form id="form">
+    <input id="input" autocomplete="off" placeholder="Write something..." />
+    <button type="submit">Submit</button>
+  </form>
+  <div id="messages"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
